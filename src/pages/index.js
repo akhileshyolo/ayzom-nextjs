@@ -1,52 +1,70 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import {useState, useEffect} from "react";
+
+import Navbar from '../components/navbar';
+import ProfileComponent from '../components/profile';
+import Blog from '../components/blog';
+import Work from '../components/work';
+import Contact from '../components/contact';
+import TGbot from '../components/tgbot';
+import HireMe from '../components/hireme';
 
 export default function Home() {
+
+
+  
+    // {/* <!-- Trigger/Open The Modal --> */}
+    // <button id="myBtn" onClick={e => { toggleModal(); }}>Open Modal</button>
+  const [isModalVisible, updateModalVisibility] = useState(false);
+
+  // useEffect(() => {
+  //   if (isModalVisible) {
+  //     console.log('Threshold of over 1 reached.', isModalVisible);
+  //   } else {
+  //     console.log('No threshold reached.', isModalVisible);
+  //   }
+  // }, [isModalVisible]);
+
+  function triggerHireModal(e) {
+    console.log("hi", e);
+    updateModalVisibility( (e) => {
+      console.log({e});
+      return !e;
+    });
+    return;
+  }
+
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Ayzom - Akhilesh Yadav</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <section className="container mx-auto">
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <Navbar triggerHireModal={triggerHireModal}></Navbar>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+        <main>
+          {/* <TGbot></TGbot> */}
+          <div className="mt-20">
+            <ProfileComponent></ProfileComponent>
+          </div>
+          <div>
+            <Blog></Blog>
+          </div>
+          <div>
+            <Work></Work>
+          </div>
+          <div>
+            <Contact></Contact>
+          </div>
+          <div>
+            <HireMe isModalVisible={isModalVisible} triggerHireModal={triggerHireModal}></HireMe>
+          </div>
+        </main>
+      </section>
 
       <footer>
         <a
@@ -60,22 +78,14 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+
+        overflow: visible;  
 
         main {
-          padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          padding:0;
         }
 
         footer {
@@ -194,14 +204,18 @@ export default function Home() {
         html,
         body {
           padding: 0;
-          margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+          background-color: #3c415c;
         }
 
         * {
           box-sizing: border-box;
+        }
+        h1,h2 {
+          color: white;
+          font-weight: bold;
         }
       `}</style>
     </div>
