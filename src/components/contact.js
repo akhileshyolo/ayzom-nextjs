@@ -84,25 +84,28 @@ export default function Contact() {
             `}
             </style>
             <h1 className="text-black text-center text-3xl font-bold pt-10 pb-5">CONTACT</h1>
-            <div className="flex place-content-center pb-10">
+            <p className="text-center mt-5">
+            I'd love to hear from you! Fill out the form below, email me at toakhileshyadav@gmail.com, or find me on <a className="underline" href="https://twitter.com/arki7n">Twitter</a> or <a className="underline" href="https://github.com/arki7n">GitHub</a>.
+            </p>
+            <div className="flex place-content-center mt-10">
                 <form id="formElem" className="w-full max-w-lg" ref={formRef}>
-                    <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="flex flex-wrap  mb-6">
                         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
                             First Name
                         </label>
-                        <input value={values.firstName} name="firstName" onChange={setFormPost} className={` ${ Boolean(values.buttonHit && !values.firstName) && 'border-red-500 '} appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white`} id="grid-first-name" type="text" placeholder="Jane"/>
+                        <input value={values.firstName} name="firstName" onChange={setFormPost} className={` ${ Boolean(values.buttonHit && !values.firstName) && 'border-red-500 '} appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white`} id="grid-first-name" type="text" placeholder=""/>
                         {/* {Boolean(values.buttonHit && !values.firstName) && (<p  className="text-red-500 text-xs italic">Please fill out this field.</p>)} */}
                         </div>
                         <div className="w-full md:w-1/2 px-3">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name">
                             Last Name
                         </label>
-                        <input value={values.lastName} name="lastName" onChange={setFormPost} className={` ${ Boolean(values.buttonHit && !values.lastName) && 'border-red-500 '} appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`} id="grid-last-name" type="text" placeholder="Doe"/>
+                        <input value={values.lastName} name="lastName" onChange={setFormPost} className={` ${ Boolean(values.buttonHit && !values.lastName) && 'border-red-500 '} appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`} id="grid-last-name" type="text" placeholder=""/>
                         {/* {Boolean(values.buttonHit && !values.lastName) && <p className="text-red-500 text-xs italic">Please fill out this field.</p>} */}
                         </div>
                     </div>
-                    <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="flex flex-wrap  mb-6">
                         <div className="w-full px-3">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
                             E-mail
@@ -111,7 +114,7 @@ export default function Contact() {
                         {/* <p className="text-gray-600 text-xs italic">Some tips - as long as needed</p> */}
                         </div>
                     </div>
-                    <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="flex flex-wrap  mb-6">
                         <div className="w-full px-3">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
                             Message
@@ -128,8 +131,17 @@ export default function Contact() {
                         <div className="md:w-2/3"></div>
                     </div>
                     {isFormSubmitted && (<p className="text-gray-600 text-sm italic mt-6 text-green-900 font-bold">Form has been submitted successfully. I will reach back to your shorty. </p>) }
+                    
+                    <div className="mt-4">&nbsp;</div>
                 </form>
                 </div>
+                <style jsx>{`
+                
+                    #contact {
+                        padding: 0 10%;
+                    }
+
+                `}</style>
         </div>
 
     )

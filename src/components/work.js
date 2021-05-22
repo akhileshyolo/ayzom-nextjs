@@ -17,7 +17,7 @@ function getCompanies() {
         {
             company: "VistaSofft",
             role: "Junior Web Developer",
-            imageUrl: "https://o.remove.bg/downloads/fb6d2ecf-32fe-4a10-a9a4-5667fe0b0578/logo0-removebg-preview.png",
+            imageUrl: "https://ayzom.com/img/vistasooft-nobg.png",
             yearRange: "May2017 - August 2017",
             description: "Junior PHP Developer working with PHP/MYSQL & Javacript/Jquery."
         }
@@ -43,7 +43,7 @@ export default function Work() {
                             </div>
                             <div className="ml-14 secondCol">
                                 <div className="ml-50 text-2xl text-white">
-                                    {item.role}
+                                    {item.role} - {item.company}
                                 </div>
                                 <div className="text-white description seconday-font-color">
                                     {item.description}

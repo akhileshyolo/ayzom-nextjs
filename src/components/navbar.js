@@ -1,33 +1,32 @@
-import Image from 'next/image';
+import {createRef} from 'react';
 
 export default function Navbar(props) {
-  
-    return (
-      <div className="navbar">
+  const closeNavRef = createRef();
 
-          <header className="header">
+    return (
+      <div className="navbar header">
             <a href="" className="logo">
-                <Image
-                  src="/images/titleImage.png" // Route of the image file
+                <img
+                  src="/images/titleImage.png"// Route of the image file
                   height={64} // Desired size with correct aspect ratio
                   width={256} // Desired size with correct aspect ratio
                   alt="Header Title Picture"
                 />
             </a>
-            <input className="menu-btn" type="checkbox" id="menu-btn" />
+            <input className="menu-btn" type="checkbox" id="menu-btn" ref={closeNavRef} />
             <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
             <ul className="menu">
               <li><a href="https://linkedin.com/in/arki7n">About</a></li>
               <li><a href="https://github.com/arki7n">Github</a></li>
               <li><a href="https://blog.ayzom.com">Blog</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a onClick={(e) => props.triggerHireModal(e)}>Hire Me!</a></li>
+              <li><a onClick={(e) => props.triggerHireModal(e, closeNavRef.current)}>Hire Me!</a></li>
             </ul>
-          </header>
  
         <style jsx>{`
           .navbar {
             background-color: #d9e4ef;
+            width: 100%;
           }
 
           a {
@@ -40,7 +39,6 @@ export default function Navbar(props) {
             background-color: #fff;
             box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
             position: fixed;
-            width: 100%;
             z-index: 3;
           }
 

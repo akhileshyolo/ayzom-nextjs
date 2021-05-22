@@ -129,7 +129,7 @@ export default function HireMe(props) {
           <div>
             <form id="formResumeElem" ref={formRef}>
               <fieldset>
-                <div className="flex flex-wrap -mx-3 mb-4 mt-2">
+                <div className="flex flex-wrap -mx-3 xl:mb-4 mid:mb-2 sm:mb-0 mt-2">
                   <div className="w-full md:w-7/8 px-3 mb-6 md:mb-0">
                     <input
                       name="firm_name_person"
@@ -145,7 +145,7 @@ export default function HireMe(props) {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap -mx-3 mb-4">
+                <div className="flex flex-wrap -mx-3 xl:mb-4 mid:mb-2 sm:mb-0">
                   <div className="w-full md:w-7/8 px-3 mb-6 md:mb-0">
                     <input
                       name="recruiter_email"
@@ -159,7 +159,7 @@ export default function HireMe(props) {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap -mx-3 mb-4">
+                <div className="flex flex-wrap -mx-3 xl:mb-4 mid:mb-2 sm:mb-0">
                   <div className="w-full md:w-7/8 px-3 mb-6 md:mb-0">
                     <input
                       name="firm_name"
@@ -173,7 +173,7 @@ export default function HireMe(props) {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap -mx-3 mb-4">
+                <div className="flex flex-wrap -mx-3 mb-2">
                   <div className="w-full md:w-7/8 px-3 mb-6 md:mb-0">
                     <input
                       name="firm_role"
@@ -186,7 +186,7 @@ export default function HireMe(props) {
                     {/* {Boolean(values.buttonHit && !values.firstName) && (<p  className="text-red-500 text-xs italic">Please fill out this field.</p>)} */}
                   </div>
                 </div>
-                <div className="flex flex-wrap -mx-3 mb-4">
+                <div className="flex flex-wrap -mx-3 xl:mb-4 mid:mb-2 sm:mb-0">
                   <div className="w-full md:w-7/8 px-3 mb-6 md:mb-0">
                     <input
                       name="recruiter_phone"
@@ -232,12 +232,11 @@ export default function HireMe(props) {
 
           /* The Modal (background) */
           .modal {
-            position: fixed; /* Stay in place */
+            position: absolute; /* Stay in place */
             z-index: 1; /* Sit on top */
             left: 0;
             top: 0;
             width: 100%; /* Full width */
-            height: 100%; /* Full height */
             overflow: auto; /* Enable scroll if needed */
             background-color: rgb(0, 0, 0); /* Fallback color */
             background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
@@ -246,11 +245,22 @@ export default function HireMe(props) {
           /* Modal Content/Box */
           .modal-content {
             background-color: #fefefe;
-            margin: 15% auto; /* 15% from the top and centered */
+            margin: 10% auto; /* 15% from the top and centered */
             padding: 20px;
             border: 1px solid #888;
             border-radius: 20px;
             width: 30%; /* Could be more or less, depending on screen size */
+          }
+
+          @media screen and (max-width: 1000px) {
+          .modal-content {
+              background-color: #fefefe;
+              margin: 20% auto; /* 15% from the top and centered */
+              padding: 20px;
+              border: 1px solid #888;
+              border-radius: 20px;
+              width: 80%; /* Could be more or less, depending on screen size */
+            }
           }
 
           /* The Close Button */

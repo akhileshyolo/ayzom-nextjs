@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import Highlight from 'react-highlight'
-
 const list = [
     {
         title: "Twitter",
@@ -65,23 +62,23 @@ function SocialBar() {
 
 export default function ProfileComponent() {
   return (
-    <div className="custom-width">
+    <div className="mt-10 sm:mt-32 md:mt-28 lg:mt-12 xl:12 2xl:16">
             
             <div className="flex flex-col items-center">
 
-                <div className="mt-10">
+                <div>
                     <img className="pic" src="/images/akhilesh.png"/>
                 </div>
-                <h1 className="heading">
-                    <span>Hi, I'm Akhilesh Yadav</span>
+                <h1 className="text-center text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-white mt-10 mb-8 sm:mt-14 sm:mb-10">
+                    Hi, I'm Akhilesh Yadav
                     <button className="ml-2 inline-block" onClick={dictateWord}>
                         <span>
                             <svg enableBackground="new 0 0 512 512" className="h-10 w-10" viewBox="0 0 87.459 87.459"> <g> <path d="M37.44,73.283H7.694V55.66C2.787,51.136,0,44.811,0,38.09c0-13.186,10.728-23.913,23.913-23.913 c10.765,0,20.254,7.251,23.074,17.634l0.088,0.32l0.178,3.921l7.217,10.12l-6.344,4.608v3.524c0,4.244-3.453,7.698-7.7,7.698 h-2.985L37.44,73.283L37.44,73.283z M13.694,67.283H31.44V56.004h8.985c0.938,0,1.7-0.763,1.7-1.699v-6.58l4.006-2.91l-4.794-6.72 l-0.227-5.016c-2.214-7.612-9.241-12.9-17.198-12.9c-9.877,0-17.913,8.036-17.913,17.913c0,5.4,2.402,10.458,6.591,13.877 l1.103,0.9L13.694,67.283L13.694,67.283z"/> <path d="M61.152,56.972L56.91,52.73c2.706-2.707,2.706-7.111-0.001-9.819l4.244-4.242C66.198,43.715,66.198,51.927,61.152,56.972z" /> <path d="M69.251,63.361l-4.242-4.242c6.229-6.229,6.229-16.366,0-22.596l4.242-4.242C77.818,40.85,77.818,54.793,69.251,63.361z"/> <path d="M78.555,69.351l-4.244-4.242c9.531-9.533,9.531-25.043,0.002-34.575l4.242-4.242 C90.427,38.161,90.427,57.478,78.555,69.351z"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
                         </span>
                     </button>
                 </h1>
-                <p className="heading-3 custom-width">
-                    I'm a software engineer, blogger and this is my Digital Garden where I keep all my learnings and Technical Journey documented.
+                <p className="heading-3">
+                    I'm a Fullstack Software Engineer, Blogger and this is my Digital Garden where I keep all my learnings and Technical Journey documented.
                 </p>
 
                 <img src="https://ayzom.com/img/carbon.png"/>
@@ -90,11 +87,6 @@ export default function ProfileComponent() {
 
         <style jsx>{`
 
-            .custom-width {
-                padding-left: 10%;
-                padding-right: 10%;
-            }
-
             .pic {
                 width: 150px;
                 height: 150px;
@@ -102,20 +94,9 @@ export default function ProfileComponent() {
                 object-fit: cover;
                 object-position: center right;
             }
-            .heading {
-                color: #fff;
-                font-size: 60px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 60px;
-                margin-bottom: 10px;
-                margin-top: 16px;
-                text-align: center;
-                text-transform: none;
-            }
             .heading-3 {
                 color: #fff;
-                font-size: 24px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: light;
                 line-height: 30px;

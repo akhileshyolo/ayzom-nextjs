@@ -26,8 +26,11 @@ export default function Home() {
   //   }
   // }, [isModalVisible]);
 
-  function triggerHireModal(e) {
-    console.log("hi", e);
+  function triggerHireModal(e, closeNavRef) {
+    console.log("hi", e, closeNavRef);
+    if(closeNavRef) {    
+      closeNavRef.checked = false;
+    }
     updateModalVisibility( (e) => {
       console.log({e});
       return !e;
@@ -42,12 +45,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="container mx-auto">
-
-        <Navbar triggerHireModal={triggerHireModal}></Navbar>
-
-        <main>
-          {/* <TGbot></TGbot> */}
+      <Navbar triggerHireModal={triggerHireModal}></Navbar>
+      <section>
+        <main className="w-full">
+          <TGbot></TGbot>
           <div className="mt-20">
             <ProfileComponent></ProfileComponent>
           </div>
@@ -73,7 +74,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          <img src="/images/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 
