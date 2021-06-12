@@ -74,7 +74,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/images/vercel.svg" alt="Vercel Logo" className="logo" />
+          <img src="https://ayzom.com/assets/img/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 

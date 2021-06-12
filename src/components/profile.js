@@ -67,7 +67,7 @@ export default function ProfileComponent() {
             <div className="flex flex-col items-center">
 
                 <div>
-                    <img className="pic" src="/images/akhilesh.png"/>
+                    <img className="pic" src="https://ayzom.com/assets/img/akhilesh.png"/>
                 </div>
                 <h1 className="text-center text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-white mt-10 mb-8 sm:mt-14 sm:mb-10">
                     Hi, I'm Akhilesh Yadav

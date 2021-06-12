@@ -7,7 +7,7 @@ export default function Navbar(props) {
       <div className="navbar header">
             <a href="" className="logo">
                 <img
-                  src="/images/titleImage.png"// Route of the image file
+                  src="https://ayzom.com/assets/img/titleImage.png"// Route of the image file
                   height={64} // Desired size with correct aspect ratio
                   width={256} // Desired size with correct aspect ratio
                   alt="Header Title Picture"
