@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 export default function TGbot() {
     
-    const url = "https://ayzom.com/js/telegram.js";
+    const url = "https://ayzom.com/assets/js/telegram.js";
     useEffect(() => {
 
         const script = document.createElement('script');

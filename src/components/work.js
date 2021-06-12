@@ -17,7 +17,7 @@ function getCompanies() {
         {
             company: "VistaSofft",
             role: "Junior Web Developer",
-            imageUrl: "https://ayzom.com/img/vistasooft-nobg.png",
+            imageUrl: "https://ayzom.com/assets/img/vistasooft-nobg.png",
             yearRange: "May2017 - August 2017",
             description: "Junior PHP Developer working with PHP/MYSQL & Javacript/Jquery."
         }

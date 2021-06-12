@@ -81,7 +81,7 @@ export default function ProfileComponent() {
                     I'm a Fullstack Software Engineer, Blogger and this is my Digital Garden where I keep all my learnings and Technical Journey documented.
                 </p>
 
-                <img src="https://ayzom.com/img/carbon.png"/>
+                <img src="https://ayzom.com/assets/img/carbon.png"/>
 
             </div>
 
