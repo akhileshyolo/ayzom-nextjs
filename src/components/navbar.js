@@ -41,6 +41,7 @@ export default function Navbar(props) {
             box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
             position: fixed;
             z-index: 3;
+            top: 0;
           }
 
           .header ul {
