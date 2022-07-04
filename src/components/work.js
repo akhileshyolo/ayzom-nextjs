@@ -1,11 +1,25 @@
 function getCompanies() {
     return [
         {
+            company: "Palo Alto Networks",
+            role: "Sr.Staff Software Engineer",
+            imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/PaloAltoNetworks_2020_Logo.svg/2560px-PaloAltoNetworks_2020_Logo.svg.png",
+            yearRange: "May 2022 - Present",
+            description: "Tech Stack: React.js, Node.js, PHP, AWS Cloud"
+        },
+        {
+            company: "Blazeclan Technologies",
+            role: "Sr.Cloud Application Developer",
+            imageUrl: "https://www.blazeclan.com/wp-content/uploads/2019/03/logo.png",
+            yearRange: "August 2021 - May 2022",
+            description: "Tech Stack:Vue.js, React.js,  Node.js, AWS Cloud based Projects"
+        },
+        {
             company: "Morningstar, Inc.",
             role: "Software Engineer",
             imageUrl: "https://financialit.net/sites/default/files/morningstar.png",
-            yearRange: "August 2019 - Present",
-            description: "Working at Vue.js, Node.js, AWS Cloud based Projects"
+            yearRange: "August 2019 - August 2021",
+            description: "Tech Stack: Vue.js, Node.js, AWS related Fullstack Project"
         },
         {
             company: "Dquip Pvt Ltd.",
