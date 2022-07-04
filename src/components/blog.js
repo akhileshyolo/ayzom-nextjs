@@ -48,7 +48,7 @@ export default function Blog() {
     return (
         <div>
             <div className="custom-width mt-20">
-                <h1 className="text-3xl">Articles</h1>
+                <h1 className="text-3xl">Awesome Articles</h1>
                 <div className="band pt-16">
                     {content.length && content.map((post, index) => (
                         <div className={"item-"+(index+1)} key={index}>

@@ -49,7 +49,7 @@ export default function Home() {
       <section>
         <main className="w-full">
           <TGbot></TGbot>
-          <div className="mt-40">
+          <div>
             <ProfileComponent></ProfileComponent>
           </div>
           <div className="ml-40">
