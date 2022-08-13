@@ -3,12 +3,12 @@ import Blog from '../../components/blog';
 
 export default function Home() {
     return (
-        <section>
-            <main className="w-full">
-                <div className="ml-40 mt-10">
+        <main className="mt-36">
+            <div className="w-full">
+                <div className="ml-40">
                     <Blog></Blog>
                 </div>
-            </main>
-        </section>
+            </div>
+        </main>
     )
 }

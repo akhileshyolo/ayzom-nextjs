@@ -24,7 +24,7 @@ export default function Header() {
     return (
         <>
             <Head>
-                <title>Create Next App</title>
+                <title>Ayzom - Akhilesh Yadav</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header>

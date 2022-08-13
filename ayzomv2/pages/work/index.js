@@ -6,13 +6,13 @@ export default function Home() {
       <main>
 
         <div className="custom-widthss">
-          <div className="pt-8 mb-10 text-2sm">Some of the professional positions I've held.</div>
+          <div className="pt-8 mb-10 text-2sm mt-24 ml-8">Some of the professional experience I own.</div>
 
-          <div class="flex flex-wrap -mx-2 mb-4">
-            <div class="w-full lg:w-1/2 px-2">
-              <div class="text-sm text-grey-dark flex items-center justify-center">
+          <div className="flex flex-wrap -mx-2 mb-4">
+            <div className="w-full lg:w-1/2 px-2">
+              <div className="text-sm text-grey-dark flex items-center justify-center">
                 <div className={Styles.main}>
-                  <h2 className="mt-20 mb-5 text-3xl ml-8">Work Experience</h2>
+                  <h2 className="mb-5 text-3xl ml-8">Work Experience</h2>
                   <div className={Styles.outer}>
                     <div className={Styles.progress}>
                       <div className={Styles.left}>
@@ -96,10 +96,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="w-full lg:w-1/2 px-2">
-              <div class="text-sm text-grey-dark flex items-center justify-center">
+            <div className="w-full lg:w-1/2 px-2">
+              <div className="text-sm text-grey-dark flex items-center justify-center">
                 <div className={Styles.main}>
-                  <h2 className="mt-20 mb-5 text-3xl ml-8">Skills & Certifications</h2>
+                  <h2 className="mb-5 text-3xl ml-8">Skills & Certifications</h2>
                   <div className={Styles.outer}>
 
                     <p>
