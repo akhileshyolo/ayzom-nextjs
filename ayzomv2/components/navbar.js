@@ -18,7 +18,7 @@ export default function Navbar(props) {
             <ul className="menu">
               <li><a href="/">Home</a></li>
               <li><a href="/work">Work</a></li>
-              <li><a href="/blog">Blog</a></li>
+              <li><a href="https://tech.ayzom.com">Blog</a></li>
               <li><a onClick={(e) => props.triggerHireModal(e, closeNavRef.current)}>Hire Me!</a></li>
                             {/* <li><a href="https://github.com/arki7n">Github</a></li> */}
               <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdqkAwUpGOc-SNmMssHBgFrX9rDtRFdFAB82p5bG2_atW64kg/viewform">Become Mentee</a></li>
