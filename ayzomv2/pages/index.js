@@ -1,5 +1,5 @@
 
-import "antd/dist/antd.css";
+import "antd/dist/reset.css";
 import ProfileComponent from '../components/profile';
 import Contact from '../components/contact';
 

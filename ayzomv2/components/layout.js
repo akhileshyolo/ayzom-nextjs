@@ -4,11 +4,11 @@ import Footer from '../components/footer';
 export default function Layout({ children }) {
   return <>
     <Header></Header>
-    <body className='flex flex-col'>
+    <div className='flex flex-col'>
       <div className=''>
       {children}
       </div>
-    </body>
+    </div>
     <Footer></Footer>
   </>
 }
