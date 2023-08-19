@@ -1,4 +1,3 @@
-import "antd/dist/antd.css";
 import Blog from '../../components/blog';
 
 export default function Home() {
