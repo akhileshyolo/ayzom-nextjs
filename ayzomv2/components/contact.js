@@ -85,7 +85,7 @@ export default function Contact() {
             </style>
             <h1 className="text-black text-center text-3xl font-bold pt-10 pb-5">CONTACT</h1>
             <p className="text-center mt-5">
-            I'd love to hear from you! Fill out the form below, email me at toakhileshyadav@gmail.com, or find me on <a className="underline" href="https://twitter.com/arki7n">Twitter</a> or <a className="underline" href="https://github.com/arki7n">GitHub</a>.
+            I'd love to hear from you! Fill out the form below, email me at akhilesh@ayzom.com, or find me on <a className="underline" href="https://twitter.com/akhileshyolo">Twitter</a> or <a className="underline" href="https://github.com/akhileshyolo">GitHub</a>.
             </p>
             <div className="flex place-content-center mt-10">
                 <form id="formElem" className="w-full max-w-lg" ref={formRef}>

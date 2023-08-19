@@ -3,7 +3,7 @@ export default function Footer() {
         <footer className="text-center text-white" style={{ backgroundColor: "#f1f1f1" }}>
             <div className="pt-9">
                 <div className="flex justify-center mb-9">
-                    <a href="https://twitter.com/arki7n" className="mr-9 text-gray-800">
+                    <a href="https://twitter.com/akhileshyolo" className="mr-9 text-gray-800">
                         <svg
                             aria-hidden="true"
                             focusable="false"
@@ -20,7 +20,7 @@ export default function Footer() {
                             ></path>
                         </svg>
                     </a>
-                    <a href="https://instagram.com/arki7n" className="mr-9 text-gray-800">
+                    <a href="https://instagram.com/akhileshyolo" className="mr-9 text-gray-800">
                         <svg
                             aria-hidden="true"
                             focusable="false"
@@ -37,7 +37,7 @@ export default function Footer() {
                             ></path>
                         </svg>
                     </a>
-                    <a href="https://linkedin.com/in/arki7n" className="mr-9 text-gray-800">
+                    <a href="https://linkedin.com/in/akhileshyolo" className="mr-9 text-gray-800">
                         <svg
                             aria-hidden="true"
                             focusable="false"
@@ -54,7 +54,7 @@ export default function Footer() {
                             ></path>
                         </svg>
                     </a>
-                    <a href="https://github.com/arki7n" className="text-gray-800">
+                    <a href="https://github.com/akhileshyolo" className="text-gray-800">
                         <svg
                             aria-hidden="true"
                             focusable="false"
