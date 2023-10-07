@@ -8,16 +8,23 @@
     "buildnow": "next build && next export"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.414.0",
+    "@aws-sdk/credential-providers": "^3.414.0",
     "antd": "latest",
+    "aws-sdk": "^2.1459.0",
+    "body-parser": "^1.20.2",
     "moment": "latest",
     "next": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "web-push": "^3.6.6"
   },
   "devDependencies": {
+    "@types/react": "18.2.21",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "sass": "^1.53.0",
-    "tailwindcss": "^3.1.6"
+    "tailwindcss": "^3.1.6",
+    "typescript": "5.2.2"
   }
 }
